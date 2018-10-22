@@ -13,6 +13,7 @@ public class DubboProvice {
 	private static final Log log = LogFactory.getLog(DubboProvice.class);
 	public static void main(String[] args) {
 		try {
+			@SuppressWarnings("resource")
 			ClassPathXmlApplicationContext  context = new ClassPathXmlApplicationContext("classpath:spring-context.xml");	
 			context.start();
 		} catch (Exception e) {
@@ -21,7 +22,7 @@ public class DubboProvice {
 		}
 		log.info("容器加载完成");
 	synchronized (DubboProvice.class) {
-		while(true)
+		while(true) 
 		{
 			try {
 				DubboProvice.class.wait();

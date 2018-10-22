@@ -46,7 +46,7 @@
 	<jsp-api.version>2.0</jsp-api.version>
 	<jstl.version>1.2</jstl.version>
 	<!-- dubbo -->
-	<dubbo.version>2.5.6</dubbo.version>
+	<dubbo.version>2.5.9</dubbo.version>
 	<zkclient.version>0.8</zkclient.version>
   </properties>
    <!-- 所有依赖统一管理 -->

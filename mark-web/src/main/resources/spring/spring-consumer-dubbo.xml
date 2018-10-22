@@ -10,11 +10,11 @@
 
 	<!-- 使用zookeeper注册中心暴露服务地址 -->
 	<!-- 注册中心地址 -->
-	<dubbo:registry protocol="zookeeper" address="10.106.3.12:2181" />
+	<dubbo:registry protocol="zookeeper" address="192.168.1.166:2181" />
 	
 	<!-- 用户服务接口 -->
-	<dubbo:reference interface="com.zhao.service.api.UsersService" id="usersService" check="false" />
-	<dubbo:reference interface="com.zhao.service.api.ShopService" id="shopService" check="false" />
+	<dubbo:reference interface="com.zhao.service.api.SupperUserService" id="supperUserService" check="false" />
+	<!--<dubbo:reference interface="com.zhao.service.api.ShopService" id="shopService" check="false" />-->
 
 
 </beans>  
